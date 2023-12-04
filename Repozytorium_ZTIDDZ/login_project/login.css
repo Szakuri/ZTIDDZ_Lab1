@@ -1,0 +1,96 @@
+html {
+	height: 100%; /* ustawia wysokość strony na 100% */
+}
+
+body {
+	height: 100%;
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	display: grid;
+	justify-items: center;
+	align-items: center;
+	background-color: rgb(136,136,230); /* ostylowanie całej strony wysokość na 100%, czcionka tekstu na stronie wybrana
+    wszystkie elementy na stronie wyśrodkowane, kolor tła na stronie przypisany do koloru za pomocą rgb */
+}
+
+#main-holder {
+	width: 50%;
+	height: 70%;
+	display: grid;
+	justify-items: center;
+	align-items: center;
+	background-color: rgb(195, 217, 255);
+	border-radius: 10px;
+	box-shadow: 0px 0px 4px 4px black; /* ostylowanie całego blok znajdującego się na środku strony na której jest formularz, wycentrowany tekst i wszystkie elementy oraz dostosywane pod szerokość strony oraz wybrany kolor na podchodzący pod biały */
+}
+
+#login-error-msg {
+	width: 50%;
+	text-align: center;
+	margin: 0;
+	padding: 5px;
+	font-size: 24px;
+	font-weight: bold;
+	color: #8a0000;
+	border: 1px solid #8a0000;
+	background-color: #e58f8f;
+	opacity: 0; /* ostylowanie wiadomości informującej o niepoprawnym haśle bądź loginie, na czerwono wyświetlająco się, aczkolwiek, element jest zakryty do momentu kliknięcia przycisku logowania*/
+}
+
+#login-error-msg2 {
+	width: 50%;
+	text-align: center;
+	margin: 0;
+	padding: 5px;
+	font-size: 24px;
+	font-weight: bold;
+	color: #8a0000;
+	border: 1px solid #8a0000;
+	background-color: #e58f8f;
+	opacity: 0; /* ostylowanie wiadomości informującej o pustym polu w loginie bądź haśle, na czerwono wyświetlająco się, aczkolwiek, element jest zakryty do momentu kliknięcia przycisku logowania*/
+}
+
+#login-form {
+	align-self: flex-start;
+	display: grid;
+	justify-items: center;
+	align-items: center;
+	width: 40%; /* ostylowanie samego formularza w którym są takie elementy jak pole loginu, pole hasła oraz przycisk logowania, wycentrowanie elementów i zmiana szerokości na 40%, żeby zwiększyć nieco sam formularz*/
+}
+
+.login-form-field::placeholder {
+	color: #3a3a3a; /* ostylowanie napisu na polu hasła i logowania, na samym początku uruchomienia strony*/
+}
+
+.login-form-field {
+	width: 100%;
+	font-size: 25px;
+	height: 60px;
+	border: none;
+	border-bottom: 1px solid #3a3a3a;
+	margin-bottom: 10px;
+	border-radius: 3px;
+	outline: none;
+	padding: 0px 0px 5px 5px;
+	margin-top: 20px; /* ostylowanie pola hasła i loginu, nadanie im odpowiednich marginesów i czcionki, zwiększenie szerokości do 100% dla "matki" czyli tak zwanego formularza, żeby pola te były łatwiejsze do zobaczenia, a zarazem przy zmianie szerokości strony się przystosowywały*/
+}
+
+#login-form-submit {
+	font-size: 35px;
+	width: 100%;
+	padding: 4px;
+	margin-top: 50px;
+	border: none;
+	border-radius: 5px;
+	color: white;
+	font-weight: bold;
+	background-color: #3a3a3a;
+	cursor: pointer;
+	outline: none;
+	height: 60px; /* ostylowanie przycisku hasła zmiana czcionki, marginesów, pogrubienie czcionki, zmiana kursora, oraz koloru czcionki*/
+}
+
+#login-header {
+	font-size: 67px;
+	font-family: 'Lucida Sans'; /* ostylowanie nagłówka, który widnieje nad formularzem*/
+}

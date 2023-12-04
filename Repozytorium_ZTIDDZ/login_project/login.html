@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+ <html lang="pl"> <!-- Ustawienie dokumentu HTML na standard kodowania w języku polskim -->
+
+<head>
+    <meta charset="UTF-8"> <!-- System kodowania Unicode, umożliwia wpisania w kodzie polskich znaków -->
+    <title>Login</title> <!-- Ustawienie tytułu strony można zobaczyć go w nazwie strony -->
+    <link rel="stylesheet" href="login.css"> <!-- Podpięcie pliku css do dokumentu html, zmienia wygląd szkieletu HTML -->
+</head>
+
+<body> <!-- Otworzenie znacznika body, za tym znaczkiem wszystko dla użytkownika będzie widoczne -->
+    <main id="main-holder"> <!-- Stworzenie głównego bloku ze swoim id, w celu ostylowania za pomocą języka css -->
+        <h1 id="login-header">Logowanie</h1> <!-- Stworzenie nagłówka z napisem Logowanie -->
+        <div id="login-error-msg">Niepoprawny login lub hasło</div> <!-- Blok z komunikatem o błędzie początkowo ukrytym przez css -->
+        <div id="login-error-msg2">Nic nie wpisałeś w polu loginu lub hasła.</div> <!-- Blok z komunikatem o błędzie początkowo ukrytym przez css -->
+
+        <form id="login-form"> <!-- Stworzenie formularza ze swoim id, w celu ostylowania oraz podpięcia go do pliku js, by przekazywał informację o wpisanych informacjach w tym formularzu-->
+            <input type="text" name="username" id="username-field" class="login-form-field"
+                placeholder="Nazwa użytkownika"> <!-- Pierwsze pole z nazwą użytkownika o typie tekstowym, ze swoją klasą dzięki której możemy ją ostylować oraz nazwą by przekazać informację do funkcji znajdującej się w pliku login.js, a dodatkowo placeholder, służacy do informacji co to za pole, wyświetla się napis Nazwa użytkownika, do momentu wpisywania w tym polu nazwy użytkownika-->
+            <input type="password" name="password" id="password-field" class="login-form-field" placeholder="Hasło"> <!-- Drugie pole z nazwą użytkownika o typie hasła (nie widać znaków jakie wpisujemy wszystkie zastąpione kropkami), ze swoją klasą dzięki której możemy ją ostylować oraz nazwą by przekazać informację do funkcji znajdującej się w pliku login.js, a dodatkowo placeholder, służacy do informacji co to za pole, wyświetla się napis Hasło, do momentu wpisywania w tym polu hasła-->
+            <input type="submit" value="Zaloguj się" id="login-form-submit">  <!-- Stworzenie pola pełniącego rolę przycisku podsumowującego z napisem w środku Zalogij się oraz z id, które jest potrzebne by zidentyfikowac ten przycisk w pliku login.js -->
+
+        </form> <!-- Zamknięcie znacznika formularza, czyli w tym miejscu kończy się formularz -->
+
+
+    </main> <!-- Koniec bloku main -->
+    <script src="login.js"></script> <!-- Podpięcie pliku js do dokumentu html, by funkcje zczytywały id, różnych elementów w formularzu -->
+</body> <!-- Zamknięcie pola body, za tym znacznikiem nic nie będzie widziane dla użytkownika strony -->
+
+</html> <!-- Koniec dokumentu html -->
